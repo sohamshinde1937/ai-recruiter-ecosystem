@@ -3,7 +3,7 @@
 A FastAPI backend for predictive, automated candidate-to-job matching and
 basic hiring-pipeline orchestration.
 
-## What's implemented (this half)
+## What's implemented 
 
 ### Data layer (PostgreSQL via SQLAlchemy)
 - **`jobs`** — title, description, required_skills (auto-extracted if not provided), min_experience_years
@@ -19,7 +19,7 @@ basic hiring-pipeline orchestration.
 ### Ranking engine (`ml_engine.py`)
 Composite score = **50% semantic similarity** (sentence-transformer embeddings)
 + **35% skill coverage** + **15% experience fit**. Returns a recommendation
-tier (`Highly Recommended` / `Potential Match` / `Low Match`) plus matched/missing skills.
+tier (`Highly Recommended` / `Potential Match` / `Low Match`) plus matched.
 
 ### API endpoints
 
@@ -77,11 +77,3 @@ tier (`Highly Recommended` / `Potential Match` / `Low Match`) plus matched/missi
   extend this logic for more pipeline automation (e.g. auto-reject below a
   threshold after N days, auto-notify on stage change, etc.)
 
-## What's NOT in this half (left for the frontend/orchestration pass)
-
-- Resume file upload / parsing (PDF/DOCX → text) — currently expects raw text
-- Job posting management UI, candidate management UI, ranking dashboard UI
-- Notifications (email/Slack on stage changes)
-- Auth / multi-tenant support
-- Interview scheduling
-- Learning loop (using hiring outcomes to retune scoring weights)
