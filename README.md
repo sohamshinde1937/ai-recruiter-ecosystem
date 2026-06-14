@@ -1,6 +1,6 @@
 # AI Recruitment Ecosystem
 
-> Predictive, automated candidate-to-job matching with full hiring-pipeline orchestration — wrapped in a single dark, console-style interface.
+> Predictive, automated candidate-to-job matching with full hiring-pipeline orchestration  wrapped in a single dark, console-style interface.
 
 ![status](https://img.shields.io/badge/status-MVP-7DD3C0?style=flat-square) ![backend](https://img.shields.io/badge/backend-FastAPI%20%2B%20PostgreSQL-13161B?style=flat-square&labelColor=2A2F36) ![frontend](https://img.shields.io/badge/frontend-vanilla%20JS-13161B?style=flat-square&labelColor=2A2F36)
 
@@ -8,13 +8,13 @@
 
 ## Overview
 
-This project pairs a weighted ranking engine with a single-page recruiter console. Paste a resume against a job description for an instant semantic score, or go further: post jobs, add candidates, rank everyone automatically, and drag applications through the hiring pipeline — all from one screen.
+This project pairs a weighted ranking engine with a single-page recruiter console. Paste a resume against a job description for an instant semantic score, or go further: post jobs, add candidates, rank everyone automatically, and drag applications through the hiring pipeline all from one screen.
 
 | | |
 |---|---|
 | 🎯 **Match Engine** | Semantic JD ↔ resume similarity, scored 0–100 |
 | 🧠 **Predictive Ranking** | 50% semantic similarity + 35% skill coverage + 15% experience fit |
-| 🪄 **Auto-extraction** | Skills & years of experience parsed from raw text — no manual tagging |
+| 🪄 **Auto-extraction** | Skills & years of experience parsed from raw text no manual tagging |
 | 🚦 **Pipeline Automation** | Strong matches (≥75) are auto-advanced to *screened* |
 | 🗂️ **Kanban Pipeline** | `applied → screened → shortlisted → interview → offer → hired` (+ `rejected`) |
 
@@ -79,7 +79,7 @@ Pick a job, hit **Rank Candidates**, and every candidate is scored against it. E
 - A plain-language recommendation
 - Current pipeline status — with an **Auto-screened** badge if the ranking engine advanced them automatically
 
-Re-running ranking is safe — it updates existing scores rather than duplicating applications.
+Re-running ranking is safe it updates existing scores rather than duplicating applications.
 
 ### 📋 Pipeline
 A kanban board across all seven stages. Move any candidate forward (or to *rejected*) with a dropdown — changes are saved instantly via the API.
